@@ -24,7 +24,10 @@ li.nav-item a.nav-link{
 li.nav-item a.nav-link:hover{
     color: #FD7E7E;
 }
-
+button.navbar-toggler{
+    border: #FFF 2px solid;
+    background-color: #FFF;
+}
 
 
 /* Profile Section */
