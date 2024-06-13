@@ -1,0 +1,86 @@
+@media screen and (max-width:768px){
+    .profileText h4{
+        font-size: medium;
+    }
+    .profileText h1{
+        font-size: x-large;
+    }
+    .profileText p{
+        font-size: small;
+    }
+
+    /* SERVICE */
+    .myService h1{
+        padding-top: 1em;
+    }
+    .myService p{
+        font-size: small;
+    }
+    .card-body a{
+        font-size: small;
+    }
+
+
+    /* ABOUT ME */
+    .aboutMeText h1{
+        font-size: x-large;
+    }
+    .aboutMeText h4{
+        font-size: medium;
+    }
+    .aboutMeText p{
+        font-size: small;
+        padding-bottom: 0.5em;
+    }
+    .aboutMeText a{
+        font-size: small;
+    }
+
+
+    /* CONTACT ME */
+    .contactMe h1{
+        padding-top: 1em;
+    }
+
+
+    /* FOOTER */
+    .topFooter .footerImage img{
+        display: none;
+    }
+    .topFooter{
+        /* display: none; */
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+
+@media screen and (max-width:576px){
+    .myService{
+        width: 100%;
+    }
+/* 
+    .mys{
+        width: 100%;
+        padding: 0;
+        margin: 0%;
+        background-color: yellow;
+    } */
+
+    .profileText {
+        width: 90%;
+        margin: auto;
+    }
+    .profileimage {
+        width: 90%;
+        margin: auto;
+        display: none;
+    }
+    .aboutMe .row{
+        width: 100%;
+    }
+    .btn.btn-lg{
+        padding: 0.5em 2em;
+    }
+}

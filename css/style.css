@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* overflow-x: hidden; */
+}
+div{
+    overflow: hidden;
+}
+body{
+    background-color: #000;
+}
+
+
+/* Navigation Section */
+a.navbar-brand img{
+    width: 150px;
+    height: fit-content;
+}
+li.nav-item a.nav-link{
+    color: white;
+}
+li.nav-item a.nav-link:hover{
+    color: #FD7E7E;
+}
+
+
+
+/* Profile Section */
+div.profile{
+    background-color: #000000;
+    width: 100%;
+}
+div.container.profile{
+    margin-top: 4em;
+    padding: 4em 0 4em 0;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.profileText p{
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+.profileText span{
+    color: #FD7E7E;
+}
+
+
+/* Profile Text Colour Animation */
+.profileText h4 span{
+    font-family: monospace;
+    font-size: 1.2em;
+    animation: color-change 6s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: #FD7E7E; }
+    25% { color: #fd7ebd; }
+    50% { color: #d77efd; }
+    75% { color: rgb(2, 2, 135); }
+    100% { color: rgb(87, 83, 83); }
+  }
+
+
+/* Button Animation */
+.btn.btn-lg:hover{
+    background-color: white;
+    color: #FD7E7E;
+    box-shadow: 0px 0px 20px 0px rgba(253, 126, 126, 0.50);
+}
+
+
+
+/* My Services */
+div.myService{
+    background-color: #323232;
+}
+.myService .row{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2em;
+}
+.myService .row .myss{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.myService h1{
+    padding-top: 1em;
+    text-align: center;
+    color: white;
+}
+.myService span{
+    color: #FD7E7E;
+}
+.card-title{
+    padding: 0.5em 0 1em 0;
+}
+i.bi{
+    font-size: 1.8em;
+}
+.card.h-100.bg-dark.text-white.serviceglow{
+    border-radius: 40px;
+}
+
+.card.h-100.bg-dark.text-white.serviceglow:hover{
+    box-shadow: 0px 0px 20px 0px rgba(253, 126, 126, 0.20);
+}
+
+
+
+/* My Projects */
+div.container.myProjects{
+    margin-top: 2em;
+    padding-bottom: 2em;
+    height: fit-content;
+}
+.myProjects h1{
+    padding: 0.5em 0;
+    text-align: center;
+    color: white;
+}
+.myProjects span{
+    color: #FD7E7E;
+}
+.card-title{
+    padding: 0.5em 0 1em 0;
+}
+div.card.h-100.bg-dark.text-white.glowcard{
+    border-radius: 32px;
+    border: 2px solid #000000;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat, var(--Dominant-color, #FFF);
+}
+
+
+/* project card on hover */
+div.card.h-100.bg-dark.text-white.glowcard:hover{
+    border-radius: 32px;
+    border: 2px solid #FD7E7E;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat, var(--Dominant-color, #FFF);
+}
+
+
+/* CARD SLIDE OVERLAY */
+div.card.h-100.bg-dark.text-white.glowcard.overlayitcard{
+    position: relative;
+    width: 100%;
+}
+.card-img-top {
+    /* opacity: 1; */
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    /* backface-visibility: hidden; */
+}
+div.card-img-overlay{
+    /* opacity: 0.9; */
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    background-color: #0f0f0f;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.card-img-overlay{
+    top: auto;
+    padding: 0;
+}
+div.card.h-100.bg-dark.text-white.glowcard:hover div.card-img-overlay{
+    bottom: 0;
+    height: 100%;
+} 
+.overlayall {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+/* #myProjects div.card.h-100.bg-dark.text-white.glowcard a img:hover{
+    visibility: hidden;
+}
+div.card-img-overlay:hover{
+    visibility: visible;
+    background-color: #902e2e;
+} */
+
+
+
+/* About Me Section */
+div.aboutMe{
+    background-color: #323232;
+    margin-top: 3em; 
+    width: 100%;
+}
+.aboutMe .row{
+    padding: 4em 1em 4em 1em;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: fit-content;
+    margin: auto;
+    color: white;
+}
+.aboutMeText{
+    height: fit-content;
+    text-align: justify;
+}
+.aboutMeText p{
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+.aboutMeText h1{
+    font-weight: 900;
+}
+.aboutMe span{
+    color: #FD7E7E;
+}
+
+
+
+/* Contact Me Section */
+div.contactMe{
+    background-color: #323232;
+    margin-top: 3em; 
+}
+.fillContact h1{
+    color: #FD7E7E;
+    text-align: center;
+}
+
+
+
+
+/* FAQs */
+.faqs{
+    background-color: #121212;
+    padding-bottom: 4em;
+}
+.accordion{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+.accordion-button{
+    background-color: #9c9b9b;
+    /* color: white; */
+}
+.faqs h1{
+    padding: 0.5em 0;
+    text-align: center;
+    color: white;
+}
+.faqs h1 span{
+    color: #FD7E7E;
+    text-align: center;
+}
+.accordion-button:not(.collapsed){
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/* Footer */
+/* .container-fluid.footer{
+    --bs-gutter-x: 1.5em;
+    padding: 0;
+} */
+.footerImage img{
+    width: 150px;
+    /* height: 250px; */
+    height: 100%;
+}
+.footer h5{
+    color: white;
+    padding: 2em 0 1em 0;
+}
+.footer p{
+    font-size: 12px;
+}
+.footer p a{
+    text-decoration: none;
+    color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.socialMedia span i{
+    color: #979797;
+}
+.footerBootom{
+    color: white;
+    margin: 0 0 0 0;
+    /* height: 2em; */
+    background: #323232;
+    padding: 0.8em;
+}
+/* .footerBootom p{
+    padding-top: 1em;
+} */
+
+/* div.container-fluid.footer{
+    padding: 0 ;
+} */
+.footerBootom span{
+    font-size: 1em;
+}
