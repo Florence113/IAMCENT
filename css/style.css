@@ -46,6 +46,7 @@ div.container.profile{
 .profileText p{
     padding-top: 1em;
     padding-bottom: 2em;
+    text-align: justify;
 }
 .profileText span{
     color: #FD7E7E;
@@ -284,10 +285,6 @@ div.contactMe{
 
 
 /* Footer */
-/* .container-fluid.footer{
-    --bs-gutter-x: 1.5em;
-    padding: 0;
-} */
 .footerImage img{
     width: 150px;
     /* height: 250px; */
@@ -324,5 +321,5 @@ div.contactMe{
     padding: 0 ;
 } */
 .footerBootom span{
-    font-size: 1em;
+    font-size: 0.8em;
 }
